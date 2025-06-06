@@ -1,8 +1,8 @@
 #include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_Methods.h"
-#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_AbstractTheaterMember.h"
-#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_Actor.h"
-#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_StageDirector.h"
-#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_PropMaster.h"
+#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_AbstractTheaterMember.cpp"
+#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_Actor.cpp"
+#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_StageDirector.cpp"
+#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_PropMaster.cpp"
 
 void addTheaterMember(vector<TheaterMember*>& members) {
     cout << "\nДобавление участника:\n"

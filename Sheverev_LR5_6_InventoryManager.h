@@ -5,15 +5,15 @@
 
 class InventoryManager {
 protected:
-    vector<std::string> props;
+    vector<string> props;
 
 public:
     InventoryManager();
     virtual ~InventoryManager();
 
-    vector<std::string> getProps() const;
-    void addProp(const std::string& propName);
-    void removeProp(const std::string& propName);
+    vector<string> getProps() const;
+    void addProp(const string& propName);
+    void removeProp(const string& propName);
     void printInventory() const;
 };
 

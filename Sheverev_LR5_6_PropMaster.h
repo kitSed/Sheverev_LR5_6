@@ -2,15 +2,15 @@
 #define SHEVEREV_LR5_6_PROPMASTER_H
 
 #include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_AbstractTheaterMember.h"
-#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_InventoryManager.h"
+#include "M:\projects\LR_OOP\Sheverev_LR5_6\Sheverev_LR5_6_InventoryManager.cpp"
 
 class PropMaster : public TheaterMember, public InventoryManager {
 private:
     double budget;
 
 protected:
-    virtual void printInfo(std::ostream& os) const override;
-    virtual void readInfo(std::istream& is) override;
+    virtual void printInfo(ostream& os) const override;
+    virtual void readInfo(istream& is) override;
     virtual bool validate() override;
 
 public:

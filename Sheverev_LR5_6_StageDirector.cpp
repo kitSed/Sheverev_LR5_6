@@ -23,15 +23,15 @@ void StageDirector::setArtisticStyle(const string& style) {
     artisticStyle = style;
 }
 
-void StageDirector::performRole() override {
+void StageDirector::performRole() {
     cout << "Режиссирует спектакль в стиле " << artisticStyle << endl;
 }
 
-string StageDirector::getMemberType() override {
+string StageDirector::getMemberType() {
     return "Режиссер";
 }
 
-bool StageDirector::validate() override {
+bool StageDirector::validate() {
     return TheaterMember::validate() && productionsCount >= 1;
 }
 

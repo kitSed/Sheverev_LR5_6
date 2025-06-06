@@ -16,16 +16,16 @@ void PropMaster::setBudget(double newBudget) {
     budget = newBudget;
 }
 
-void PropMaster::performRole() override {
+void PropMaster::performRole() {
     cout << "Управляет реквизитом (бюджет: " << budget << " руб.)" << endl;
     printInventory();
 }
 
-string PropMaster::getMemberType() override {
+string PropMaster::getMemberType() {
     return "Хранитель реквизита";
 }
 
-bool PropMaster::validate() override {
+bool PropMaster::validate() {
     return TheaterMember::validate() && budget >= 50000;
 }
 
@@ -54,7 +54,7 @@ void PropMaster::printInfo(ostream& os) const {
 void PropMaster::readInfo(istream& is) {
     TheaterMember::readInfo(is);
     
-    double inputBudget;
+    int inputBudget;
     EnterNumberInt(inputBudget, "Введите бюджет (мин. 50000): ", is)();
     while (inputBudget < 50000) {
         cout << "Бюджет должен быть ≥50000!" << endl;

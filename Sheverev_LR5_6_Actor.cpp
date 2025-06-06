@@ -21,7 +21,7 @@ void Actor::setIsUnderstudy(bool understudy) {
     isUnderstudy = understudy; 
 }
 
-void Actor::performRole() override {
+void Actor::performRole() {
     cout << "Играет роль: " << currentRole;
     if (isUnderstudy) {
         cout << " (дублер)";
@@ -29,11 +29,11 @@ void Actor::performRole() override {
     cout << endl;
 }
 
-string Actor::getMemberType() override {
+string Actor::getMemberType() {
     return "Актер";
 }
 
-bool Actor::validate() override {
+bool Actor::validate() {
     return TheaterMember::validate() && 
            currentRole != "Не назначена" && 
            !currentRole.empty();
